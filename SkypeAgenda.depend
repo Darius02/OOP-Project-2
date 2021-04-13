@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1618223739 source:d:\users\darius\c++ projects\skypeagenda\date.in.c
+
+1618254427 source:d:\users\darius\c++ projects\skypeagenda\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
