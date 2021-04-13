@@ -63,8 +63,8 @@ class Abonat: public Persoana
 {
     unsigned int nr_telefon;
 public:
-    Abonat (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/);// : Persoana (i, n);
-    Abonat (const Abonat &other);// : Persoana (other);
+    Abonat (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/);
+    Abonat (const Abonat &other);
     ~Abonat ();
     friend istream& operator>> (istream &in, Abonat &a);
     friend ostream& operator<< (ostream &out, Abonat &a);
@@ -112,8 +112,8 @@ class Abonat_Skype: public Abonat
 {
     unsigned int id_skype;
 public:
-    Abonat_Skype (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/, int is /*= 0*/);// : Abonat (i, n, nr);
-    Abonat_Skype (const Abonat_Skype &other);// : Abonat (other);
+    Abonat_Skype (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/, int is /*= 0*/);
+    Abonat_Skype (const Abonat_Skype &other);
     ~Abonat_Skype ();
     friend istream& operator>> (istream &in, Abonat_Skype &a);
     friend ostream& operator<< (ostream &out, Abonat_Skype &a);
@@ -159,8 +159,8 @@ class Abonat_Skype_Romania: public Abonat_Skype
 {
     string adresa_mail;
 public:
-    Abonat_Skype_Romania (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/, int is /*= 0*/, string a /*= ""*/);// : Abonat_Skype (i, n, nr, is);
-    Abonat_Skype_Romania (const Abonat_Skype_Romania &other);// : Abonat_Skype (other);
+    Abonat_Skype_Romania (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/, int is /*= 0*/, string a /*= ""*/);
+    Abonat_Skype_Romania (const Abonat_Skype_Romania &other);
     ~Abonat_Skype_Romania ();
     friend istream& operator>> (istream &in, Abonat_Skype_Romania &a);
     friend ostream& operator<< (ostream &out, Abonat_Skype_Romania &a);
@@ -211,8 +211,8 @@ class Abonat_Skype_Extern: public Abonat_Skype
 {
     string tara;
 public:
-    Abonat_Skype_Extern (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/, int is /*= 0*/, string t /*= ""*/);// : Abonat_Skype (i, n, nr, is);
-    Abonat_Skype_Extern (const Abonat_Skype_Extern &other);// : Abonat_Skype (other);
+    Abonat_Skype_Extern (int i /*= 0*/, string n /*= ""*/, int nr /*= 0*/, int is /*= 0*/, string t /*= ""*/);
+    Abonat_Skype_Extern (const Abonat_Skype_Extern &other);
     ~Abonat_Skype_Extern ();
     friend istream& operator>> (istream &in, Abonat_Skype_Extern &a);
     friend ostream& operator<< (ostream &out, Abonat_Skype_Extern &a);
@@ -263,10 +263,10 @@ class Abonat_Skype_: public Abonat_Skype /// retine un Abonat_Skype_Romania sau 
 {
     string key, info;
 public:
-    Abonat_Skype_  (int i /*= 0*/, string /*n = ""*/, int nr /*= 0*/, int is /*= 0*/, string k /*= ""*/, string inf /*= ""*/);// : Abonat_Skype (i, n, nr, is);
-    Abonat_Skype_ (const Abonat_Skype_ &other);// : Abonat_Skype (other);
-    Abonat_Skype_ (Abonat_Skype_Romania &other);// : Abonat_Skype (other);
-    Abonat_Skype_ (Abonat_Skype_Extern &other);// : Abonat_Skype (other);
+    Abonat_Skype_  (int i /*= 0*/, string /*n = ""*/, int nr /*= 0*/, int is /*= 0*/, string k /*= ""*/, string inf /*= ""*/);
+    Abonat_Skype_ (const Abonat_Skype_ &other);
+    Abonat_Skype_ (Abonat_Skype_Romania &other);
+    Abonat_Skype_ (Abonat_Skype_Extern &other);
     ~Abonat_Skype_ ();
     friend istream& operator>> (istream &in, Abonat_Skype_ &a);
     friend ostream& operator<< (ostream &out, Abonat_Skype_ &a);
